@@ -11,7 +11,7 @@ const CoutChanger = (state, action) => {
           age: current.age + 1
         }];
       }
-      else if (action.subtype === "count") {
+      else if (action.subtype == "count") {
         return [{
           count: current.count + 1,
           age: current.age
@@ -30,7 +30,7 @@ const CoutChanger = (state, action) => {
           age: current.age > 25 ? current.age - 1 : 0
         }];
       }
-      else if (action.subtype === "count") {
+      else if (action.subtype == "count") {
         return [{
           count: current.count > 0 ? current.count - 1 : 0,
           age: current.age
@@ -49,7 +49,7 @@ const CoutChanger = (state, action) => {
           age: 25
         }];
       }
-      else if (action.subtype === "count") {
+      else if (action.subtype == "count") {
         return [{
           count: 0,
           age: current.age
